@@ -17,5 +17,4 @@ class Thing(models.Model):
     quantity = models.IntegerField(
         unique = False,
         validators = [MinValueValidator(0), MaxValueValidator(100)],
-        #regex = r'^([0-9]|[1-9][0-9]|100)$',
     )
